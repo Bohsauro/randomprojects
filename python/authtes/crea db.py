@@ -10,11 +10,10 @@ cursor_obj = connection_obj.cursor()
 
 # SQL query to create the table
 table_creation_query = """
-    CREATE TABLE IF NOT EXISTS user (
+    CREATE TABLE  user (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         Username CHAR(25) NOT NULL,
-        Password CHAR(25) NOT NULL,
-        Creation_date INT NOT NULL
+        Password CHAR(25) NOT NULL
     );
 """
 
